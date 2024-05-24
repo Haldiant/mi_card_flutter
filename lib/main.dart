@@ -9,32 +9,79 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage('images/nahal.jpg'),
             ),
-            Text(
+            const Text(
               'Nahal Widianto',
               style: TextStyle(
-                  fontFamily: 'RedHatDisplay',
-                  fontSize: 36,
+                  fontFamily: 'Play',
+                  fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
             Text(
               'FLUTTER DEVELOPER',
               style: TextStyle(
-                fontSize: 18,
-                color: Colors.white70,
-                fontFamily: 'SourceSans3',
-                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                color: Colors.teal.shade100,
+                fontFamily: 'Play',
                 letterSpacing: 2.5,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+              width: 250,
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
+            Card(
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+62 82120746407',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: 'RedHatDisplay',
+                        fontWeight: FontWeight.bold,
+                        color: Colors.teal.shade900),
+                  ),
+                )),
+            Card(
+              margin: const EdgeInsets.symmetric(
+                vertical: 10,
+                horizontal: 25,
+              ),
+              child: ListTile(
+                leading: const Icon(
+                  Icons.email,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'nhalwidianto@gmail.com',
+                  style: TextStyle(
+                    fontFamily: 'RedHatDisplay',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.teal.shade900,
+                  ),
+                ),
               ),
             )
           ],

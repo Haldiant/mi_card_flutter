@@ -71,6 +71,11 @@ flutter:
         - asset: fonts/SourceSans3-Italic-VariableFont_wght.ttf
         - asset: fonts/SourceSans3-VariableFont_wght.ttf
 
+    - family: Play
+      fonts:
+        - asset: fonts/Play-Bold.ttf
+        - asset: fonts/Play-Reguler.ttf
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
